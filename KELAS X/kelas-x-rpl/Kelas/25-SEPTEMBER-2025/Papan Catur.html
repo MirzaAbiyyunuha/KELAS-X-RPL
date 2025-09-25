@@ -1,48 +1,63 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Papan Catur 3x3</title>
-  <style>
-    .papancatur {
-      display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-template-rows: repeat(3, 100px);
-      border: 2px solid #333;
-      width: 300px;
-      height: 300px;
-      margin: 20px auto;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catur 3x3</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
-    .kotak {
-      width: 100px;
-      height: 100px;
-    }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-    .putih {
-      background-color: #a37105;
-    }
+        .board {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
 
-    .hitam {
-      background-color: #000000;
-    }
-  </style>
+        .square {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+        }
+
+        .orange {
+            background: rgb(222, 165, 121);
+        }
+
+        .white {
+            background: rgb(255, 243, 181);
+        }
+    </style>
 </head>
+
 <body>
-  <h2 style="text-align:center;">Papan Catur</h2>
-  <div class="papancatur">
-    <!-- Baris 1 -->
-    <div class="kotak putih"></div>
-    <div class="kotak hitam"></div>
-    <div class="kotak putih"></div>
-    <!-- Baris 2 -->
-    <div class="kotak hitam"></div>
-    <div class="kotak putih"></div>
-    <div class="kotak hitam"></div>
-    <!-- Baris 3 -->
-    <div class="kotak putih"></div>
-    <div class="kotak hitam"></div>
-    <div class="kotak putih"></div>
-  </div>
+    <h2>Papan Catur</h2>
+    <div class="board">
+        <div class="square white" style="top:0; left:0;"></div>
+        <div class="square orange" style="top:0; left:50px;"></div>
+        <div class="square white" style="top:0; left:100px;"></div>
+
+        <div class="square orange" style="top:50px; left:0;"></div>
+        <div class="square white" style="top:50px; left:50px;"></div>
+        <div class="square orange" style="top:50px; left:100px;"></div>
+
+        <div class="square white" style="top:100px; left:0;"></div>
+        <div class="square orange" style="top:100px; left:50px;"></div>
+        <div class="square white" style="top:100px; left:100px;"></div>
+    </div>
 </body>
+
 </html>
