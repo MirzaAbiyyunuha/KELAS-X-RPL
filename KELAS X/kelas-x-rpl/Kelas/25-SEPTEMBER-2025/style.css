@@ -1,0 +1,34 @@
+ 
+        #rumah{ 
+            width: 80%;
+            margin: auto;
+        }
+       .Kopetensi{
+            color: rgb(4, 175, 129);
+            font-style: italic;
+            font-size: large;
+        }
+        .Pendidikan{
+            height: 500px;
+
+        }
+        .huruf{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+            font-weight: 500;
+        }
+        .jarak {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .warna{
+            background-color: goldenrod;
+        }
+       
+        #judul{
+           width: 0;
+            margin: auto;
+        }
+        .hrf{
+            font-size: x-large ;
+        }
