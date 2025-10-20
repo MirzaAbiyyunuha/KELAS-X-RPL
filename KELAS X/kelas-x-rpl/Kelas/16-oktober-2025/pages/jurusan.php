@@ -1,0 +1,2 @@
+<h1>jurusan</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam explicabo eaque, tempore ipsa rem consectetur, quidem inventore porro nulla sint exercitationem debitis maxime beatae. Officia, itaque minima quisquam nemo deserunt aliquid corrupti facere tempore iure doloribus aperiam quo, suscipit obcaecati illum odit similique. Nobis, libero iste odit minima cumque quisquam.</p>

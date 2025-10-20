@@ -1,0 +1,2 @@
+<h1>sejarah</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam iste perspiciatis, magnam animi, quo maxime atque nulla obcaecati possimus doloremque a temporibus officiis sed facilis ullam delectus. Cumque, quidem iure!</p>
