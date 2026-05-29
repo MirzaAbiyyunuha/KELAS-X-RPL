@@ -1,0 +1,54 @@
+<?php
+
+namespace App\Http\Controllers\API;
+
+use App\Http\Controllers\Controller;
+use App\Models\Project;
+use Illuminate\Http\Request;
+
+class ProjectController extends Controller
+{
+    public function index()
+    {
+        return response()->json(Project::latest()->get());
+    }
+
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'tech_stack' => 'required|string',
+            'github_link' => 'nullable|url',
+            'demo_link' => 'nullable|url',
+        ]);
+
+        $project = Project::create($validated);
+        return response()->json($project, 201);
+    }
+
+    public function show(Project $project)
+    {
+        return response()->json($project);
+    }
+
+    public function update(Request $request, Project $project)
+    {
+        $validated = $request->validate([
+            'title' => 'string|max:255',
+            'description' => 'string',
+            'tech_stack' => 'string',
+            'github_link' => 'nullable|url',
+            'demo_link' => 'nullable|url',
+        ]);
+
+        $project->update($validated);
+        return response()->json($project);
+    }
+
+    public function destroy(Project $project)
+    {
+        $project->delete();
+        return response()->json(null, 204);
+    }
+}
